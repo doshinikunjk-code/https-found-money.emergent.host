@@ -1,0 +1,113 @@
+{
+  "project_name": "GrantHunter AI",
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast) - Modified for B2B Finance",
+  "design_philosophy": {
+    "vibe": "Amazon Checkout for Government Grants",
+    "description": "Frictionless, authoritative, and extremely clear. The design eliminates the bureaucratic feel of government forms, replacing it with the sleek, high-conversion flow of a top-tier SaaS or e-commerce checkout. Every action must feel simple and inevitable.",
+    "key_principles": [
+      "Clarity over Decoration: 95% of the UI is monochrome. Color exists exclusively to highlight money and actionable items.",
+      "Density with Breathing Room: Use strict bento grids for the dashboard. Fill the space purposefully but pad the containers generously.",
+      "Tangible Progress: The 'Money Wheel' is the emotional center. It must feel like real money waiting to be claimed."
+    ]
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#10B981",
+      "foreground": "#FFFFFF",
+      "hover": "#059669",
+      "description": "Emerald Green - Reserved strictly for success metrics, 'Apply Now' CTAs, and Secured Funds."
+    },
+    "secondary": {
+      "DEFAULT": "#F59E0B",
+      "foreground": "#FFFFFF",
+      "hover": "#D97706",
+      "description": "Amber - Used for pending actions, Draft Reviews, and 'Potential' funds on the Money Wheel."
+    },
+    "background": {
+      "default": "#FAFAFA",
+      "paper": "#FFFFFF",
+      "alt": "#F4F4F5"
+    },
+    "foreground": {
+      "default": "#0F172A",
+      "muted": "#64748B"
+    },
+    "border": "#E2E8F0",
+    "destructive": {
+      "DEFAULT": "#EF4444",
+      "foreground": "#FFFFFF"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Outfit', sans-serif",
+      "body": "'Manrope', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-slate-500",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "bento_spans": {
+      "money_wheel": "col-span-1 md:col-span-1 lg:col-span-1 row-span-2",
+      "grant_portfolio": "col-span-1 md:col-span-2 lg:col-span-3 row-span-2"
+    },
+    "padding_system": "p-6 or p-8 inside cards to prevent text collision. Use generous padding."
+  },
+  "surfaces_and_components": {
+    "cards": "bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200. The 'Clay & Crisp' look.",
+    "buttons": "rounded-lg font-semibold transition-all duration-200 active:scale-[0.98]",
+    "inputs": "bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500",
+    "money_wheel": "Circular Recharts PieChart or custom SVG donut chart. Thick strokes. Emerald for Secured, Amber/Gray for Potential. Large typography in the center showing total.",
+    "grant_action_cards": "Must look like checkout items. Clear title, large Match Score (e.g., 96%), and a single prominent CTA button (Apply, Review, Upload NOA)."
+  },
+  "motion": {
+    "hover": "Translate Y up by 2px, shadow increase.",
+    "page_transition": "Fade in with slight upward drift (framer-motion).",
+    "stagger": "List items in the Grant Portfolio should stagger in on load."
+  },
+  "media": {
+    "icons_library": "@phosphor-icons/react or lucide-react",
+    "images": {
+      "hero_background": {
+        "url": "https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Minimalist white futuristic architecture",
+        "usage": "Landing page hero section background. Use with a white/gradient overlay to ensure text readability."
+      },
+      "brand_logo": {
+        "url": "https://images.unsplash.com/photo-1669220339242-c12788586902?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbG9nbyUyMHN5bWJvbCUyMGlzb2xhdGVkfGVufDB8fHx8MTc3NjM0Mzg5OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "GrantHunter AI minimalist logo",
+        "usage": "Top navigation bar and footer."
+      },
+      "user_avatar_1": {
+        "url": "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwwfHx8fDE3NzYzNDM4ODV8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Business professional smiling",
+        "usage": "Dashboard user profile picture."
+      },
+      "user_avatar_2": {
+        "url": "https://images.pexels.com/photos/36733311/pexels-photo-36733311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Businesswoman professional",
+        "usage": "Testimonial or alternative user avatar."
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build the dashboard using a strict 'Control Room' Bento grid (Mode B). Make sure the Money Wheel and the Grant Portfolio sit side-by-side on desktop.",
+    "Implement the 'Money Wheel' as a prominent circular visualization (using Recharts PieChart or similar). Show $0 Secured (Empty/Gray) and $125k Potential (Amber or Emerald). Center the total value inside the donut.",
+    "Design Grant Action Cards as highly actionable modules. Include AI Match Score as a badge (e.g., '96% Match'). Ensure the CTA (Review Draft, Upload NOA, Apply Now) is the most prominent element on the card.",
+    "Do NOT use default Shadcn themes without customization. Apply the 'Clay & Crisp' surface strategy: white backgrounds, 1px slate-200 borders, soft shadows.",
+    "Ensure all fonts use 'Outfit' for headings and 'Manrope' for body. Install these via Google Fonts.",
+    "Add 'data-testid' to all interactive elements for testing.",
+    "Make the flow feel like an e-commerce checkout: simple, step-by-step, no overwhelming government jargon."
+  ]
+}

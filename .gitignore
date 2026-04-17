@@ -1,0 +1,34 @@
+# Backend
+backend/.env
+
+# Frontend
+frontend/.env
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# System
+.DS_Store
+*.logfrontend/node_modules/.cache/default-development/12.pack
+frontend/node_modules/.cache/default-development/12.pack
+-e 
+# Environment and credential files
+.env
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials
+*.py test files
+test_reports/
+memory/
+frontend/node_modules/.cache/default-development/4.pack
+frontend/node_modules/.cache/default-development/14.pack
+frontend/node_modules/.cache/default-development/2.pack

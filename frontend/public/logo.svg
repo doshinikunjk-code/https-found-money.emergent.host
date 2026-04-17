@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="#0F172A"/>
+  
+  <!-- Emerald accent ring -->
+  <circle cx="200" cy="200" r="165" fill="none" stroke="#10B981" stroke-width="4"/>
+  
+  <!-- Grabber hand/magnet icon -->
+  <g transform="translate(120, 100)">
+    <!-- Magnet shape -->
+    <path d="M80 0 C120 0, 160 40, 160 80 L160 140 C160 160, 140 180, 120 180 L100 180 L100 100 C100 70, 80 60, 60 60 L60 0 Z" fill="#10B981"/>
+    <path d="M80 0 L60 0 L60 60 C40 60, 20 70, 20 100 L20 180 L0 180 C-20 180, -40 160, -40 140 L-40 80 C-40 40, 0 0, 40 0 Z" fill="#10B981"/>
+    
+    <!-- Dollar sign in center -->
+    <text x="60" y="145" font-family="Outfit, Arial, sans-serif" font-size="72" font-weight="800" fill="white" text-anchor="middle">$</text>
+    
+    <!-- Magnetic field lines -->
+    <path d="M-50 170 C-50 200, -30 220, 0 220" fill="none" stroke="#10B981" stroke-width="3" opacity="0.5" stroke-dasharray="6,4"/>
+    <path d="M170 170 C170 200, 150 220, 120 220" fill="none" stroke="#10B981" stroke-width="3" opacity="0.5" stroke-dasharray="6,4"/>
+  </g>
+  
+  <!-- Brand text -->
+  <text x="200" y="340" font-family="Outfit, Arial, sans-serif" font-size="36" font-weight="800" fill="white" text-anchor="middle" letter-spacing="1">GRANTGRABBER</text>
+</svg>

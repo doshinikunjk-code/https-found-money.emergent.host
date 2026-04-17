@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="24" fill="#10B981"/>
+  <g transform="translate(28, 20)">
+    <path d="M32 0 C48 0, 64 16, 64 32 L64 56 C64 64, 56 72, 48 72 L40 72 L40 40 C40 28, 32 24, 24 24 L24 0 Z" fill="white"/>
+    <path d="M32 0 L24 0 L24 24 C16 24, 8 28, 8 40 L8 72 L0 72 C-8 72, -16 64, -16 56 L-16 32 C-16 16, 0 0, 16 0 Z" fill="white"/>
+    <text x="24" y="58" font-family="Arial" font-size="32" font-weight="900" fill="#10B981" text-anchor="middle">$</text>
+  </g>
+</svg>
